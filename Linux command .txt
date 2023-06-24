@@ -1,0 +1,86 @@
+man [command] (to open manual for each command)
+ls (to show list of all the files and folder)
+cd [path](To go to specific directory by \path of it)
+cd .. (Go back to previous directory)
+pwd (show the path of current directory)
+mkdir [directory/folder name] (Make Directory)
+rmdir [directory/folder name](Remove Empty Directory only)
+rmdir -r [folder_name]   (Remove folder recusivly)(forfolder use -r)
+touch [file name](To make file ) 
+open [file/folder]   (open folder/file graphicalyy)
+mv  [file] [destination]	(To move the file in aonther directory or rename the file)
+cp [file/folder]		(To copy file or folder)(for folder use -r)
+head (Show output of the first 10 files/lines from start  )
+tail (show output of the last 20 files/lines from end)
+date ( print current date & time)
+date > file.txt (Date will be update in txt file)
+		if we use >> it will append data in txt file
+cat [file1][file2] (just like tail/ concatenate the file show output of entire file)
+less [file] (To show content of the file in intractive manner [using spacce bar move to next page])
+echo (It just print the value like print in python)
+echo * (give us name of each folder & files)(*.?? ? used for number of chracters) 
+{}used for format in echo
+wc (It give us information about text file (limes)(words)(bytes))
+file1 | wc
+ | (Piping is used 2 or more commands o/p of 1 command serve as i/p of another)
+sort [file1] (SOrt data  inside files )
+for numeric value use sort -n file1
+uniq [file] (report or omit duplicated lines)
+uniq -u(show unique line in file)
+uniq -d (show duplicate file )
+uniq -c(show occurenceof each file)
+diff (To tell us what changes are made in files with line #)
+find (to find files or folders on the basis of diffrent properties) 
+find .(. means current directory)(find evrery single file)
+find. -name '*.py' (* used for everything find files with anything with .py extensions)
+find -type () -size ()
+
+grep (used to find text inside the files).
+grep match file.txt (Find match in file.txt)
+grep -rE -o "REgex"
+du (Find the sizes of file in the directory)
+df (It tell us how much size used by  used by files how much available ,etc)
+history (History of all the commands i have run)
+!(command no.)to run those command
+
+ps (how many process are running /process status)
+kill -SIGNAL(_KILL,-SIGKILL,_9) <PID>  (process can receive signal and work according to it)
+killall (TO kill multiple process using name )
+jobs (To suspend the process for a time and)
+fg Id or bg Id(than start it again in background or foreground)
+sleep[time]s &(stoped process for specific time &means running in background)
+gzip [filename](TO compress the file)
+gzip -k [] (Keep the original files)
+gunzip [filename](To uncompress the file)
+tar (is used to to create archive grouping multiple files into a single file)
+tar -cf filename (to create archive with filenmae.tar file1,file2)
+-X used for unarchive 
+nano (is user friendly editor with user friendly options )
+alias (To create new command in alias and use after it)
+command1 | xargs command2  
+xargs (convert o/p of command1 into a list of arguments used as an i/p of coomand1)
+ln (used for to create links of file ) 
+ln -s (To make soft link for diffrent file)
+who (dispaly the users logged in to the system)
+su [username] 	(switch user)
+sudo (Run commaand as a root users)(To make changes in root directory or installing somethings we use sudo cpmmand)
+passwd (To cahnge password)
+sudo chown [ownwenamw] [filename] (change ownership which menas who owns particular file or directory)
+drwxr-xr-x (d for directory and have permsiion of r (read) & w(write) & x(execute)
+l
+-
+
+
+chmod mode filename (To cahnge permission for file )
+u-user (the owner of file)
+a-all user  					
+g-fro group
+o-other world
+
++ grant permsiion
+- denaied permission
+= set a permission and removes others
+
+r-the read permission
+w- the write permission
+x-the execute permission
