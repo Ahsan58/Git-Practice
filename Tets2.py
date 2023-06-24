@@ -1,3 +1,4 @@
+## ADD comment in file 
 def check_vowels_chracter(input,vowles):
     if input in vowles_list:
         print(input,"is vowel character")
@@ -8,7 +9,7 @@ print("Please Enter a character")
 input_char = input()
 vowles_list = ['a','e','i','o','u']
 check_vowels_chracter(input_char,vowles_list)
-
+# FInd Factorial 
 def find_factorial(n):  
     if n == 1:  
        return n   
